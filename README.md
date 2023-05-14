@@ -29,3 +29,10 @@ $ python manage.py startapp 'new-model'
 # Iniciar Servidor de desarrollo
 $ python manage.py runserver
 ```
+
+## Music
+[Youtube](https://music.youtube.com/watch?v=fiBvOKmuWKg&list=RDAMVM4y33h81phKU)
+```bash
+# Musica de concentracion
+
+```
