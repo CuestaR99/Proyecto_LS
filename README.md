@@ -11,7 +11,7 @@
 [Install Django](https://docs.djangoproject.com/en/4.2/topics/install/#installing-official-release).
 
 ```bash
-python -m pip install Django
+$ python -m pip install Django
 ```
 
 ## Creatin a Project.
@@ -30,9 +30,35 @@ $ python manage.py startapp 'new-model'
 $ python manage.py runserver
 ```
 
-## Music
-[Youtube](https://music.youtube.com/watch?v=fiBvOKmuWKg&list=RDAMVM4y33h81phKU)
-```bash
-# Musica de concentracion
+## Database setup
+[Database Django](https://docs.djangoproject.com/en/4.2/intro/tutorial02/)
 
+<p>Por defecto, Django usa la configuracion de SQLite, la cual esta incluida en Python<p>
+
+```bash
+#Buscar Cambios para realizar migraciones
+$ python manage.py makemigrations
+
+#Realizar migraciones
+$ python manage.py migrate
+```
+
+## Conneting to the database
+```bash
+#Configuracion para MySQL
+$ settings.py
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'database_name',
+        'USER': 'root',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '3306',        
+    }
+}
+
+#install mysqlclient
+$ pip install mysqlclient
 ```
