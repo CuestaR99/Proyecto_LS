@@ -10,6 +10,6 @@ class control(models.Model):
 class Control_Plaga(models.Model):
     periodo_carencia = models.DateField()
     registro_ICA = models.CharField(max_length=50)
-    frecuencia_aplicacion = models.DateField()
+    frecuencia_aplicacion = models.IntegerField()
     id_control = models.ForeignKey(control, on_delete=models.CASCADE)
     
