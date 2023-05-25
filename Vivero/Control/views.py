@@ -20,4 +20,4 @@ def crear_control_plaga(request):
         'form': control_plaga()
     })
     else:
-        Control_Plaga.objects.create(periodo_carencia = request.POST['periodo_carencia'], registro_ica = request.POST['registro_ica'], frecuencia_aplicacion = request.POST['frecuencia_aplicacion'], id_controlkey = 1)
+        Control_Plaga.objects.create(periodo_carencia = request.POST['periodo_carencia'], registro_ICA = request.POST['registro_ICA'], frecuencia_aplicacion = request.POST['frecuencia_aplicacion'], id_controlkey = 1)

@@ -7,6 +7,6 @@ class control_viveros(forms.Form):
 
 class control_plaga(forms.Form):
     periodo_carencia = forms.DateField(label="Periodo de carencia")
-    registro_ica = forms.CharField(label="Número de registro ICA", max_length=50)
+    registro_ICA = forms.CharField(label="Número de registro ICA", max_length=50)
     frecuencia_aplicacion = forms.IntegerField(label="Frecuencia de aplicación")
 
