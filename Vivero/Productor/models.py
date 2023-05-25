@@ -7,3 +7,4 @@ class productor(models.Model):
     Apellido = models.CharField(max_length=50)
     Telefono = models.CharField(max_length=15)
     Correo = models.EmailField()
+
