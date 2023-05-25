@@ -10,15 +10,14 @@
                 <div class="row g-5">
                     <div class="col-md-7 col-lg-8">
                         <h1 class="mb-3">Nuevo Hongo</h1>
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" method="POST" novalidate>
                             <div class="row g-3">
                                 <div class="col-12">
                                     <form method="POST">
                                         {% csrf_token %}
                                         {{ form.as_p }}
                                         <hr class="my-4">
-                                        <button type="button"
-                                            class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Guardar</button>
+                                        <button class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Guardar</button>
                                         <button type="button"
                                             class="btn btn-outline-secondary btn-lg px-4">Cancelar</button>
 
@@ -31,7 +30,9 @@
             </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="https://img.freepik.com/vector-premium/granjero-hombre-logotipo-mascota-agricultura-granja-icono_194708-1744.jpg?w=2000" alt width="500">
+            <img class="rounded-lg-3"
+                src="https://img.freepik.com/vector-premium/granjero-hombre-logotipo-mascota-agricultura-granja-icono_194708-1744.jpg?w=2000"
+                alt width="500">
         </div>
     </div>
 </div>

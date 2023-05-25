@@ -9,7 +9,7 @@ def create_vivero(request):
             'form' : crear_vivero()
         })
     else:
-        vivero.objects.create(codigo_vivero = request.POST['codigo_vivero'], nombre_vivero = request.POST['nombre_vivero'], tipo_cultivo= request.POST['tipo_cultivo'])
+        vivero.objects.create(Codigo_vivero = request.POST['Codigo_vivero'], Nombre_vivero = request.POST['Nombre_vivero'], Tipo_cultivo= request.POST['Tipo_cultivo'],id_productor_id='')
         return redirect('/productor/')
 
 def create_ubication(request):
@@ -18,4 +18,4 @@ def create_ubication(request):
             'form' : crear_ubicacion()
         })
     else:
-        ubicacion.objects.create(departemento = request.POST['departemento'], municipio = request.POST['municipio'], vereda= request.POST['vereda'])
+        ubicacion.objects.create(Departemento = request.POST['Departemento'], Municipio = request.POST['Municipio'], Vereda= request.POST['Vereda'])
