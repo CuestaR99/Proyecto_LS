@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<!-- productor_nuevo.html -->
+<h2>Nuevo Control</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>
+        Guardar
+    </button>
+</form>
+
+
+{% endblock %}

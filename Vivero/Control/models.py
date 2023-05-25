@@ -7,6 +7,9 @@ class control(models.Model):
     nombre_control = models.CharField(max_length=100)
     id_labor = models.ForeignKey(labor, on_delete=models.CASCADE)
 
+    def __str__(self):
+        return self.tipo_control + ' _ ' + self.id_labor.name
+
 class Control_Plaga(models.Model):
     periodo_carencia = models.DateField()
     registro_ICA = models.CharField(max_length=50)

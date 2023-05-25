@@ -17,7 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('login'), include(('Login.urls', 'login')),
+    path('admin/', admin.site.urls),    
+    path('', include('Productor.urls')),
+    path('productor/', include('Productor.urls')),
+    path('viveros', include('Viveros.urls')),
+    path('control/', include('Control.urls')),
+    path('fertilizante/', include('Fertilizante.urls')),
+    path('hongo/', include('Hongo.urls')),
+    path('labor/', include('Labor.urls')),
+    
 ]
